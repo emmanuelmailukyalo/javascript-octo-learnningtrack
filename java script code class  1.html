@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<body>
+ <script>
+var firstname = 'john';
+var lastname = 'doe';
+
+var fullname = firstname.concat('',lastname) ; 
+var greeting= 'Hello,'+ fullname;/
+concole.log(greeting.touppercase());
+concole.log(greeting.tolowercase());
+ </script> 
+
+ <p>
+ 	<script>
+var salary;
+console.log(salary); 
+    </script>
+ </p>
+
+<script>
+var a = ['cat', 'dog', 'banana']; // arrays are used to store a list of values in a single variable 
+console.log(a[2]);
+console.log(a[0]); // it starts with zero (0,1,2,3)
+
+a[4]= 'panda'; // adding a string 4 which but without a three
+
+</script>
+
+<script>
+                                                 // adding to an array
+var myarray =['car', 'bike', 'vehicle'];
+ myarray.push('scooter');                        // adds element to the end of the aray
+ console.log(myarray);                           //car,bike,scooter
+ 
+ myarray.unshift('train');                       // adds element to the beggining of the array 
+ console.log(myarray);                            //train,car,bike,vehicle,scooter
+
+//removing from an array
+var myarray = ['boy', 'girl', 'child',]
+myarray.pop();
+console.log(myarray);                            //boy,girl
+
+myarray.shift();
+console.log(myarray);                            //girl
+
+                                                    // array is combined variables
+
+//object  are collection of values with meaning names/keys
+
+var pet = {
+  name: 'cooper',
+  type: 'dog'
+}
+  console.log(pet.type),                          // dog
+  pet.age =11;
+  console.log(pet.age);                           //11
+
+  pet.status = 'goodboy';
+  console.log(pet.status);                        // goodboy
+</script>
+
+ <script>
+  // applying functions to arrays
+  var nums = [4,8,12,2]
+
+ function print(n) {
+  console.log(n);
+   // body...
+ }
+ nums.foreach(print);
+
+ function iseven(n) {
+ return n % 2 == 0,
+ }
+ nums.every(iseven); //true
+
+ function square (n){
+ return n * n;
+ }
+ var squares = nums.map(square);   //[16,64,144,4]
+ </script>
+
+<p>
+<script>
+  //primitive arguments
+function trytochange(x) {
+  x=4;
+  // body...
+}
+var y = 11;
+trytochange(y);
+console.log(y);    //still 11 doesnt change (primitive argument)
+</script>
+</p>
+<script>
+  //object arguments
+function changeme(obj) {
+obj.age++;
+}
+var p={age : 30};
+changeme(p)
+console.log(p.age); //now 31
+</script>
+<body>
+<script>
+   //functions in objects
+  var johndoe = {
+    name: 'johndoe',
+    age: '32',
+greeting: function(){
+  return 'hello! nice to meet you!';
+                   }
+}
+console.log(johndoe.greeting());
+
+
+//creating a prototype
+function person (name,age) {
+//prototype
+this.name =name;
+this.age;
+this.greeting = function (){
+return'hello! My name is' + this.name;
+                           }
+}
+//how to use the prototype to create dynamic content
+
+var johndoe = new person ('johndoe',32);
+johndoe.greeting();   //hello my name is john doe
+
+var gracetabitha = new person ('grace',19);
+gracetabitha.greeting();  //hello my name id grace
+
+var josh = new person ('joshua',12)
+josh.greeting();   //hello my name is joshua 
+
+var mailu = new person ('emmanuel'21);
+mailu.greeting();       //hello my name is mailu
+
+//extending a prototype
+var student (name,age,school){
+this._proto_ = new person(name,age);
+this.school= school;
+}
+var sarahbrown = new student ('sarah'17,'elimu')
+sarahbrown.greeting();    //hello! my name is sarah brown
+</script>
+
+</body>
+</body>
+</html> 
