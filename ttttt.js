@@ -16,3 +16,5 @@ console.log(salary);
  </p>
 
 <script></script>
+javascript
+javascript
