@@ -15,6 +15,5 @@ console.log(salary);
     </script>
  </p>
 
-<script></script>
-
-jjjjjjj
+<script>
+     </script>
